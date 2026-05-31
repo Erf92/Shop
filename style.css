@@ -23,6 +23,8 @@ a {
 body {
   font-family: var(--font);
   direction: rtl;
+  color: var(--color-text-dark);
+  line-height: 1.7rem;
 }
 
 .container {
@@ -50,4 +52,56 @@ header {
 .nav-item {
   font-size: 1rem;
   font-weight: 500;
+}
+
+.hero {
+  padding: var(--padding-size);
+  /* display: grid;
+  grid-template-columns: 1fr 2fr; */
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+}
+
+.hero__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.hero__title {
+  font-size: 1.7rem;
+  white-space: nowrap;
+}
+
+.hero__subtitle {
+  text-align: center;
+}
+
+.hero__button {
+  margin-top: 0.5rem;
+  font-size: 1.2rem;
+  background: var(--color-hero);
+  color: white;
+  border: none;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.hero__button:hover {
+  background: var(--color-hero-hover);
+}
+
+.hero__image {
+  width: 100%;
+}
+
+.hero__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 1rem;
 }
