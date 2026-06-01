@@ -150,3 +150,32 @@ footer {
   align-items: center;
   gap: 1.5rem;
 }
+
+@media (max-width: 768px) {
+  .header-content {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .header-content nav {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .hero {
+    flex-direction: column;
+  }
+
+  .features {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .footer__content {
+    gap: 2rem;
+  }
+
+  .social {
+    flex-direction: column;
+  }
+}
